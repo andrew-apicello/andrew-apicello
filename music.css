@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background-image: url("assets/images/sfskyline.jpg");
+	background-attachment: fixed;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+
+
+/* Navigation Bar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;	
+    padding: 0;				
+    overflow: hidden;
+    position: center;
+    background-color:rgba(0,0,0,0.6);
+    width: 100%;
+}
+
+li{
+	float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px gray;
+    }
+
+li a:hover {
+    background-color: #3f3f39;
+}
+
+
+/*--------------------------------*/
+
+
+
+
+h1{
+	margin-top: 200px;
+	margin-left: 20px;
+	float: left;
+	font-size: 28px;
+	padding: 10px;
+	color: white;
+	background-color:rgba(0,0,0,0.6);
+}
+
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: red;}
+    25%  {top: 0px; left: 100px; background: blue;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: red;}
+}
+
+
+
+
+
+.wrapper{
+	margin: 280px 0px 0px 0px;
+	padding: 10px;
+	background: white;
+}
+
+.wrappertwo{
+	margin: 180px 0px 0px 0px;
+	padding: 10px;
+	background: white;
+}
+
+
+.profile{
+	float: left;
+	margin-left: 5%;
+	margin-top: 100px;
+	margin-right: 20px; 
+	margin-bottom: 10px;
+	border-style: solid;
+	border-color: #333333;
+	}
+
+.image{
+	float: right;
+	margin: 20px 50px 20px 30px;
+	border-style: solid;
+	border-color: #333333;
+}
+
+.imagetwo{
+	float: left;
+	margin: 20px 30px 20px 50px;
+	border-style: solid;
+	border-color: #333333;
+}
+
+
+
+
+p{
+    text-align: justify;
+    text-indent: 40px;
+    padding: 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
