@@ -3,21 +3,17 @@
 	padding: 0;
 }
 
-
 body{
-	background-image: url("assets/images/sfskyline.jpg");
-	background-attachment: fixed;
-    background-position: center center;
+    background-image: url("assets/images/sfskyline.jpg");
     background-attachment: fixed;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-attachment: fixed;
+    background-size: 50% auto;
+    background-repeat: no-repeat, no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
 }
-
-
 
 /* Navigation Bar*/
 
@@ -35,6 +31,7 @@ li{
 	float: left;
 }
 
+
 li a {
     display: block;
     color: white;
@@ -45,7 +42,8 @@ li a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     text-shadow: 1px 1px 2px gray;
-    }
+}
+
 
 li a:hover {
     background-color: #3f3f39;
@@ -53,9 +51,6 @@ li a:hover {
 
 
 /*--------------------------------*/
-
-
-
 
 h1{
 	margin-top: 200px;
@@ -68,37 +63,21 @@ h1{
 }
 
 
-
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+p{
+    text-align: justify;
+    text-indent: 40px;
+    padding: 10px 50px;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    0%   {top: 0px; left: 0px; background: red;}
-    25%  {top: 0px; left: 100px; background: blue;}
-    50%  {top: 100px; left: 100px; background: yellow;}
-    75%  {top: 100px; left: 0px; background: green;}
-    100% {top: 0px; left: 0px; background: red;}
+table{
+       border: 1px solid black;
 }
 
-/* Standard syntax */
-@keyframes mymove {
-    0%   {top: 0px; left: 0px; background: red;}
-    25%  {top: 0px; left: 100px; background: blue;}
-    50%  {top: 100px; left: 100px; background: yellow;}
-    75%  {top: 100px; left: 0px; background: green;}
-    100% {top: 0px; left: 0px; background: red;}
+.audio{
+    padding: 30px auto;
+    border: 1px solid black;
+    align-content: center;
 }
-
-
-
-
 
 .wrapper{
 	margin: 280px 0px 0px 0px;
@@ -106,22 +85,27 @@ div {
 	background: white;
 }
 
-.wrappertwo{
+.footer{
 	margin: 180px 0px 0px 0px;
 	padding: 10px;
 	background: white;
+    width: 100%;
+    height: 100px;
+    position: relative;
 }
 
 
+/*Image Formatting*/
+
 .profile{
-	float: left;
-	margin-left: 5%;
-	margin-top: 100px;
-	margin-right: 20px; 
-	margin-bottom: 10px;
-	border-style: solid;
-	border-color: #333333;
-	}
+    float: left;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-right: 20px; 
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #333333;
+    }
 
 .image{
 	float: right;
@@ -137,14 +121,6 @@ div {
 	border-color: #333333;
 }
 
-
-
-
-p{
-    text-align: justify;
-    text-indent: 40px;
-    padding: 10px 50px;
-}
 
 
 

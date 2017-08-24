@@ -5,7 +5,7 @@
 
 
 body{
-	background-image: url("assets/images/sfskyline.jpg");
+	background-image: url("assets/images/30021-space-Earth-Sun-horizon (1).jpg");
 	background-attachment: fixed;
     background-position: center center;
     background-attachment: fixed;
@@ -16,8 +16,6 @@ body{
     -o-background-size: cover;
 
 }
-
-
 
 /* Navigation Bar*/
 
@@ -74,48 +72,18 @@ h1{
 	margin: 280px 0px 0px 0px;
 	padding: 10px;
 	background: white;
+    height: auto;
+    overflow: auto;
 }
-
-.wrappertwo{
-	margin: 180px 0px 0px 0px;
-	padding: 10px;
-	background: white;
-}
-
-
-.profile{
-	float: left;
-	margin-left: 5%;
-	margin-top: 100px;
-	margin-right: 20px; 
-	margin-bottom: 10px;
-	border-style: solid;
-	border-color: #333333;
-	}
 
 .image{
-	float: right;
-	margin: 20px 50px 20px 30px;
+    float: left;
+	margin: auto;
 	border-style: solid;
 	border-color: #333333;
+    width: 480px;
+    height: 350px;
 }
-
-.imagetwo{
-	float: left;
-	margin: 20px 30px 20px 50px;
-	border-style: solid;
-	border-color: #333333;
-}
-
-
-
-
-p{
-    text-align: justify;
-    text-indent: 40px;
-    padding: 10px 50px;
-}
-
 
 
 
