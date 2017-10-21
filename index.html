@@ -5,127 +5,91 @@
 	<link rel="icon" href="assets/images/favicon.ico"/>
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Welcome Developers!" />
-	<meta name="keywords" content="Andrew, Apicello, Guitar, Chemistry,Physics, Algorithmic Trading, Professional, Finance, Implmentations, Piano, Astronomy, Profile"/>
+	<meta name="keywords" content="Andrew, Apicello, , Profile Biology, Chemistry,Physics, Algorithmic Trading, Professional, Finance, Valuation, Implmentations, Piano, Guitar, Astronomy"/>
 	<meta name="Andrew Apicello" content="index,follow">
+
+
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
 	<div class="backgroundOne">
 		<nav> 
 			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="music.html">Music</a></li></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a target="_blank" href="https://github.com/andrew-apicello">GitHub</a></li>
+				<li><a target="_blank" href="https://www.linkedin.com/in/andrewcapicello/">LinkedIn</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="backgroundTwo">
-		<nav> 
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="music.html">Music</a></li></li>
-			</ul>
-		</nav>
-		<div class="wrapper">
-			<table class="audio">
-				<tr>
-					<th>Title</th>
-					<th>Style</th>
-					<th>Description</th>
-					<th>Song</th>
-				</tr>
-				<tr>
-					<td>Autumn Leaves</td>
-					<td>Jazz</td>
-					<td>New Arrangement of a classic jazz standard with some smooth improvisation</td>
-					<td>
-						<audio controls src="music/autunm leaves final.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-				<tr>
-					<td>Bonita</td>
-					<td>Latin</td>
-					<td>A spanish rhythm I wrote with a double time solo</td>
-					<td>
-						<audio controls src="music/Bonita1.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-				<tr>
-					<td>Clear Skies</td>
-					<td>Bossanova</td>
-					<td>A standard jazz background played on guitar with some tender improv</td>
-					<td>
-						<audio controls src="music/bossanova final.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-				<tr>
-					<td>Loco</td>
-					<td>Southern Blues</td>
-					<td>Simple chords with a lot of soul</td>
-					<td>
-						<audio controls src="music/loco.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-				<tr>
-					<td>Grace</td>
-					<td>Indian/Gospel</td>
-					<td>An attempt at transitioning from a minor key with indian influences to a well recognized gospel tune in a major key</td>
-					<td>
-						<audio controls src="music/grace.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-				<tr>
-					<td>Indie</td>
-					<td>Cool Blue</td>
-					<td>Written for my friend when he was going through the malestrom</td>
-					<td>
-						<audio controls src="music/cool blue.wav" type="audio/mpeg"></audio>
-					</td>
-				</tr>
-			</table> 
+		<div class="container">
+			<p>
+				I stumbled upon Levinthal's Paradox while studing proten folding at the College of New Jersey. Levinthal asserted that if the amino acids which comprise proteins were to take on all the possible shapes for which they are capable, it would take longer than the age of the universe to find the final shape where it can realistically perform its function. In nature, we find that proteins can fold into their functional shape nearly instantaneously. My fascination and motivation to rectify theory with experimentation lead me to study proteins in graduate school at the University of Virginia.
+			</p>
+			<br>
+			<p>
+				While there, I studied the SNARE complex, the proteins responsible for neuronal communication. The Nobel prize for their discovery was awarded the previous year, most notably due to their critical link to neurodegenerative diseases. I jumped at the chance to study the molecular function of the brain.
+			</p>
+			<br>
+			<p>
+				The SNARE complex drives the release of neurotransmitters, but a divide in the scientific community exists in agreeing how this process is initiated. An early step in this process is for the vesicle containing the neurotransmitters to contact the outer membrane of the neuron (presynaptic membrane). I conducted research investigating the function of Synaptotagmin, a SNARE regulatory protein which bridges the gap bewteen the neurotransmitter containing vesicle and the presynaptic membrane, by calculating the number of lipids in the pre-synaptic membrane neutralized upon binding. 
+			</p>
+			<br>
+			<p>
+				This project is a simulation of the protein folding of Synaptotagmin used to validate my hypothesis that changes in the protein's orientation upon calcium binding exposed critical amino acids for protein-membrane interactions and driving neuronal communication.
+			</p>
+			<br><br>
+			<h2>Protein Folding with PyRosetta</h2>
+			<h3>Language: Python</h3>
+			<img class="draw" src="assets/images/molecule.gif">
+		</div>
+	</div>
+
+
+	<div class="backgroundTwo">
+		<div class="container">
+
+			<p></p>
+			<p></p>
+			<p></p>
+			<p>https://andrew-apicello.github.io/ISS_Tracker/</p>
+			
+			
+			<h2>International Space Station Tracker</h2>
+			<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
+			<img class="draw" src="assets/images/molecule.gif">
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="backgroundThree">
+	</div>
+	<div class="backgroundTwo">
+		<div class="container">
+			<p>
+				Quantopian is an enviornment for designing and backtesting quantitative trading algorithms. After studying finance at the McIntire Business Institute, I began using my skills learned as an academic programmer to explore the technical side of Wall Street.  
+			</p>
+			<p>
+				The strategy employed here calculates the simple moving average of a 30 and 10 day window. The driving alpha is the 10 day moving average crossing over the 10 day moving average, indicating an upward trend. Buy commands are then immidiately executed by the algorithm.
+			</p>
+			<p>
+				<a href="https://www.quantopian.com/users/59937adeff20c80010e3b832" target="_blank" >Quantopian Profile</a>
+			</p>
+
+			<br><br>
+			<h2>Algorithmic Trading with Quantopian</h2>
+			<h3>Python</h3>
+			<img class="draw" src="assets/images/stock market.gif">
 		</div>
 	</div>
 	<div class="backgroundThree">
-		<nav> 
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="music.html">Music</a></li></li>
-			</ul>
-		</nav>
-		<div class="gallery" align="center" >
-			<img src="assets/images/hurricane.gif">
-			<img src="assets/images/patternal.gif">
-			<img src="assets/images/molecule.gif">
-			<img src="assets/images/iss.gif">
-			<img src="assets/images/fractal.gif">
-			<img src="assets/images/neuronscience.gif">
-			<img src="assets/images/nycsubway.gif">
-			<img src="assets/images/musicturntable.gif">
-			<img src="assets/images/waves.gif">
-			<video autoplay loop src="assets/images/githubwhisky.mp4" type="video/mp4"></video>
-			<video autoplay loop src="assets/images/circlestars.mp4" type="video/mp4"></video>
-			<video autoplay loop src="assets/images/haleakala.mp4" type="video/mp4"></video>
-			<video autoplay loop src="assets/images/himalayas.mp4" type="video/mp4"></video>
-			<video autoplay loop src="assets/images/crystalwater.mp4" type="video/mp4"></video>
-			<video autoplay loop src="assets/images/giphy.mp4" type="video/mp4"></video>
-		</div>
-		<!-- <div class="footer">
-			<ul>
-				<li><a href="#">Contact Info</a></li>
-				<li><a href="mailto:andrew.apicello@gmail.com">Email Address</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Git Hub</a></li>
-			</ul>
-		</div> -->
 	</div>
-
-
-
-
-
 
 </body>
 </html>
