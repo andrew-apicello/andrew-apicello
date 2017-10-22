@@ -11,29 +11,34 @@
 	</script>
 
 
-
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
+	<nav id="nav"> 
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/andrewcapicello/">LinkedIn</a></li>
+			<li><a target="_blank" href="https://github.com/andrew-apicello">GitHub</a></li>
+			<li><a target="_blank" href="https://www.hackerrank.com/andrew_apicello">HackerRank</a></li>
+		</ul>
+	</nav>
 	<div class="backgroundOne">
-		<nav> 
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a target="_blank" href="https://www.linkedin.com/in/andrewcapicello/">LinkedIn</a></li>
-				<li><a target="_blank" href="https://github.com/andrew-apicello">GitHub</a></li>
-				<li><a target="_blank" href="https://www.hackerrank.com/andrew_apicello">HackerRank</a></li>
-			</ul>
-		</nav>
+		
 		<img id="profile_picture" src="assets/images/transparent_profile_pic.gif">
 		<div>
 			<h1 id="headingh1">Andrew Apicello</h1>
 			<h2 id="headingh2">Development Portfolio</h2>
+			<h2 id="headingh2">Scientist, Consultant, Engineer</h2>
 		</div>
 	</div>
 	<div class="backgroundTwo">
-		<div class="container">
 
+		<div class="container">
+			<a target="_blank" href="https://andrew-apicello.github.io/ISS_Tracker/">
+				<h2>International Space Station Tracker</h2>
+			</a>
 			<p>This website provides the current location of the international space station (ISS). Additionally, the user can enter his or her location and find the next five best times to view the ISS. This is accomplished using NASA's API which delivers the coordinates of the ISS and also the next 100 times when the ISS's altitude will be greater than 10 degrees over the horizon (90 degrees being the Zenith). The coordinates of the ISS are fed directly into Google's maps API and updated every 120 seconds.
 			</p>
 			<br>
@@ -44,16 +49,18 @@
 			<p>
 				Furthermore, a weather API and a sunset API is used to determine if the sky will be clear and it will be night for the best possible viewing conditions. The weather API takes the user location and time of passover as arguments and delivers the weather. The Sunset api will provide a threshold response, day or night, for if the local time of the overhead pass is before astronomical sunrise and after astronomical sunset respecively.</p>
 				<br>
-				<p>https://andrew-apicello.github.io/ISS_Tracker/</p>
-				<h2>International Space Station Tracker</h2>
 				<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
-				<img class="draw" src="assets/images/iss.gif">
+				<a target="_blank" href="https://andrew-apicello.github.io/ISS_Tracker/">
+					<img  class="draw" src="assets/images/iss.gif">
+				</a>
 			</div>
 		</div>
 
 		<div class="backgroundTwo">
 			<div class="container">
-
+				<a target="_blank" href="">
+					<h2>Protein Folding with PyRosetta</h2>
+				</a>
 				<p>
 					I stumbled upon Levinthal's Paradox while studing proten folding at the College of New Jersey. Levinthal asserted that if the amino acids which comprise proteins were to take on all the possible shapes for which they are capable, it would take longer than the age of the universe to find the final shape where it can realistically perform its function. In nature, we find that proteins can fold into their functional shape nearly instantaneously. My fascination and motivation to rectify theory with experimentation lead me to study proteins in graduate school at the University of Virginia.
 				</p>
@@ -70,9 +77,10 @@
 					This project is a simulation of the protein folding of Synaptotagmin used to validate my hypothesis that changes in the protein's orientation upon calcium binding exposed critical amino acids for protein-membrane interactions and driving neuronal communication.
 				</p>
 				<br><br>
-				<h2>Protein Folding with PyRosetta</h2>
 				<h3>Language: Python</h3>
-				<img class="draw" src="assets/images/protein.gif">
+				<a target="_blank" href="">
+					<img class="draw" src="assets/images/protein.gif">
+				</a>
 			</div>
 		</div>
 
@@ -110,15 +118,13 @@
 
 		<script type="text/javascript">
 
+// <img  class="draw" src="assets/images/iss_capture.png">
 
-		// $(document).ready(function() {
+$(document).ready(function() {
 
-		// 	$("#profile_picture").animate({
-		// 		opacity: '1',
-		// 		transition: '0.2s'
-		// 	});
-		// });
-	</script>
+
+});
+</script>
 
 </body>
 </html>
