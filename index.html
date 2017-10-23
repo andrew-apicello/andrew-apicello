@@ -9,8 +9,6 @@
 	<meta name="Andrew Apicello" content="index,follow">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
-
-
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
@@ -22,6 +20,30 @@
 			<li><a target="_blank" href="https://www.linkedin.com/in/andrewcapicello/">LinkedIn</a></li>
 			<li><a target="_blank" href="https://github.com/andrew-apicello">GitHub</a></li>
 			<li><a target="_blank" href="https://www.hackerrank.com/andrew_apicello">HackerRank</a></li>
+			<li><a href="#" id="myBtn">Contact</a></li>
+			<!-- 	<button >Open Modal</button> -->
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+
+					<form action="mailto:andrew.apicello@gmail.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name"><br>
+						E-mail:<br>
+						<input type="text" name="mail"><br>
+						Comment:<br>
+						<input type="text" name="comment" size="50"><br><br>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
+					</form>
+				</div>
+
+			</div>
+
 		</ul>
 	</nav>
 	<div class="backgroundOne">
@@ -29,17 +51,18 @@
 		<img id="profile_picture" src="assets/images/transparent_profile_pic.gif">
 		<div>
 			<h1 id="headingh1">Andrew Apicello</h1>
-			<h2 id="headingh2">Development Portfolio</h2>
-			<h2 id="headingh2">Scientist, Consultant, Engineer</h2>
+			<!-- <h2 id="headingh2">Development Portfolio</h2> -->
+			<h2 id="headingh2">Scientist, Consultant, Developer</h2>
 		</div>
 	</div>
 	<div class="backgroundTwo">
-
+		<a target="_blank" href="https://andrew-apicello.github.io/ISS_Tracker/">
+			<h2>International Space Station Tracker</h2>
+		</a>
 		<div class="container">
-			<a target="_blank" href="https://andrew-apicello.github.io/ISS_Tracker/">
-				<h2>International Space Station Tracker</h2>
-			</a>
-			<p>This website provides the current location of the international space station (ISS). Additionally, the user can enter his or her location and find the next five best times to view the ISS. This is accomplished using NASA's API which delivers the coordinates of the ISS and also the next 100 times when the ISS's altitude will be greater than 10 degrees over the horizon (90 degrees being the Zenith). The coordinates of the ISS are fed directly into Google's maps API and updated every 120 seconds.
+			
+			<p>
+				This website provides the current location of the international space station (ISS). Additionally, the user can enter his or her location and find the next five best times to view the ISS. This is accomplished using NASA's API which delivers the coordinates of the ISS and also the next 100 times when the ISS's altitude will be greater than 10 degrees over the horizon (90 degrees being the Zenith). The coordinates of the ISS are fed directly into Google's maps API and updated every 120 seconds.
 			</p>
 			<br>
 			<p>
@@ -55,12 +78,41 @@
 				</a>
 			</div>
 		</div>
-
 		<div class="backgroundTwo">
+			<a class="projectHeader" target="_blank" href="https://friend-forum.herokuapp.com/members">
+				<h2>Friend Forum: Structuring Social Media Chat</h2>
+			</a>
 			<div class="container">
-				<a target="_blank" href="">
-					<h2>Protein Folding with PyRosetta</h2>
+
+				<p>
+					The inspiration for this project came from a Facebook chat I was having with a group of my college friends. We got onto a riveting topic, but then a casual suggestion for us all to get together derailed the conversation. The extremely limited chat capabilities of social media was deeply frustrating, as groups can only have one conversation at a time. So, my team’s idea was to enable online groups to make their their own threads, so they could structure their conversations the way they want and never miss out on sharing great thoughts.
+				</p>
+				<br>
+				<p>
+					As a first step towards creating a space where groups can create customized threads, my team and I developed the Friend Forum. In this application, the user is able to login, make a profile, and chat about eight predefined topics as well as in a global conversation. With our link tracking feature, the user will not have to go scrolling through an entire conversation to find a source one of his or her friends shared, as it is automatically stored in a separate list.  Finally, there is a news API to provide a feed of relevant top trending articles within the scope of the predefined topics.
+				</p>
+				<br>
+				<p>
+					Although quite similar to other social media outlets, we believe the Friend Forum represents a paradigm shift from mainstream sites. The user’s attention is not guided towards content other users have created about themselves, but rather towards conversations between users. It changes the emphasis of the what is important from the nodes of a web, to the strands connecting them.
+				</p>
+				<br>
+				<p>
+					The next steps for this project are to have customizable groups and forums rather than predefined ones. The challenge will be to make dynamically added sockets and paths so users can visit each other’s profiles and create their own custom chatrooms. Additionally, we hope to replicate the functionality of the link list with a hashtag list, where any hastaged words will automatically be stored in a list alongside the main chat.
+				</p>
+				<br>
+				<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
+				<h3>Node Packages: Sequelize, Passport, Express, MySql2</h3>
+				<a target="_blank" href="https://friend-forum.herokuapp.com/members">
+					<img class="draw" src="assets/images/fluid.gif">
 				</a>
+			</div>
+		</div>
+		<!-- <div class="backgroundTwo">
+			<a target="_blank" href="">
+				<h2>Protein Folding with PyRosetta</h2>
+			</a>
+			<div class="container">
+				
 				<p>
 					I stumbled upon Levinthal's Paradox while studing proten folding at the College of New Jersey. Levinthal asserted that if the amino acids which comprise proteins were to take on all the possible shapes for which they are capable, it would take longer than the age of the universe to find the final shape where it can realistically perform its function. In nature, we find that proteins can fold into their functional shape nearly instantaneously. My fascination and motivation to rectify theory with experimentation lead me to study proteins in graduate school at the University of Virginia.
 				</p>
@@ -83,19 +135,8 @@
 				</a>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
 		<div class="backgroundThree">
-		</div>
-		<div class="backgroundTwo">
+			<h2>Algorithmic Trading with Quantopian</h2>
 			<div class="container">
 				<p>
 					Quantopian is an enviornment for designing and backtesting quantitative trading algorithms. After studying finance at the McIntire Business Institute, I began using my skills learned as an academic programmer to explore the technical side of Wall Street.  
@@ -106,28 +147,38 @@
 				<p>
 					<a href="https://www.quantopian.com/users/59937adeff20c80010e3b832" target="_blank" >Quantopian Profile</a>
 				</p>
-
 				<br><br>
-				<h2>Algorithmic Trading with Quantopian</h2>
 				<h3>Python</h3>
-				<img class="draw" src="assets/images/stock market.gif">
+				<img class="draw" src="assets/images/stockmarket.gif">
 			</div>
-		</div>
-		<div class="backgroundThree">
-		</div>
+		</div> -->
+
+		
 
 		<script type="text/javascript">
 
-// <img  class="draw" src="assets/images/iss_capture.png">
+			var modal = document.getElementById('myModal');
+			var btn = document.getElementById("myBtn");
+			var span = document.getElementsByClassName("close")[0];
 
-$(document).ready(function() {
 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
 
-});
-</script>
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
 
-</body>
-</html>
+	</body>
+
+	</html>
 
 
 
