@@ -270,6 +270,46 @@ img:hover {
 
 /*=====================Dynamic Window Resizing=================================================*/
 
+
+
+
+
+@media screen and (max-width: 1050px) {
+#headingh2{
+	display: none;
+}
+#headingh1{
+	display: none;
+}
+
+#profile_picture{
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+
+	.headPiece{
+	float: left;
+	}
+
+	.draw{
+		margin-left: 25%;
+	margin-right: 25%;
+	}
+
+	.container{
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	column-width: 70%;
+	padding: 20px 5%;
+	color: black;
+	column-count: 1;
+	column-gap: 50px;
+	}
+}
+
+
 @media screen and (max-width: 980px) {
 	img {
 		margin: 20px;
@@ -281,6 +321,7 @@ img:hover {
 	}
 }
 
+
 @media screen and (max-width: 768px) {
 	video {
 		margin: 10px;
@@ -290,6 +331,10 @@ img:hover {
 	img {
 		margin: 10px;
 		transition: 1s;
+		height: 
+	}
+	.draw{
+		display: none;
 	}
 }
 
