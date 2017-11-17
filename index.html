@@ -1,10 +1,3 @@
-<!-- 
-
-Functioning Email
-Add 3rd project
-
--->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +12,9 @@ Add 3rd project
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
 <body>
 	<nav id="nav"> 
@@ -28,32 +24,12 @@ Add 3rd project
 			<li><a target="_blank" href="https://github.com/andrew-apicello">GitHub</a></li>
 			<li><a target="_blank" href="https://www.hackerrank.com/andrew_apicello">HackerRank</a></li>
 			<li><a href="mailto:andrew.apicello@gmail.com">Contact</a></li>
-			<!-- 	<button >Open Modal</button> -->
-
-			<!-- The Modal -->
-			<!-- <div id="myModal" class="modal">
-				<div class="modal-content">
-					<span class="close">&times;</span>
-
-					<form action="mailto:andrew.apicello@gmail.com" method="post" enctype="text/plain">
-						Name:<br>
-						<input type="text" name="name"><br>
-						E-mail:<br>
-						<input type="text" name="mail"><br>
-						Body:<br>
-						<input type="text" name="comment" size="50"><br><br>
-						<input type="submit" value="Send">
-						<input type="reset" value="Reset">
-					</form>
-				</div>
-
-			</div> -->
 
 		</ul>
 	</nav>
 	<div class="backgroundOne">
 		
-		<img id="profile_picture" class="headPiece" src="assets/images/transparent_profile_pic.gif">
+		<img id="profile_picture" class="headPiece" src="assets/images/transparent_profile_pic.gif" alt="profile picture">
 		<div>
 			<h1 id="headingh1" class="headPiece">Andrew Apicello</h1>
 			<!-- <h2 id="headingh2">Development Portfolio</h2> -->
@@ -67,50 +43,45 @@ Add 3rd project
 		<div class="container">
 			
 			<p>
-				This website provides the current location of the international space station (ISS). Additionally, the user can enter his or her location and find the next five best times to view the ISS. This is accomplished using NASA's API which delivers the coordinates of the ISS and also the next 100 times when the ISS's altitude will be greater than 10 degrees over the horizon (90 degrees being the Zenith). The coordinates of the ISS are fed directly into Google's maps API and updated every 120 seconds.
+				This website provides the current location of the international space station (ISS). Additionally, the user can enter his or her location and find the next five best times to view the ISS ranked by duration. This is accomplished using NASA's API which delivers the coordinates of the ISS and also the next 100 times when the ISS's altitude will be greater than 10 degrees over the horizon (90 degrees being the Zenith). The coordinates of the ISS are fed directly into Google's maps API and updated every 120 seconds. Lastly, the weather and daylight are provided for each of the best times listed.
 			</p>
 			<br>
+			<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
+				<img id="img1"  class="draw" src="assets/images/iss.gif" alt="international space station">
+		</div>
+	</div>
+	<hr>
+	<div class="backgroundThree">
+		<a class="projectHeader" target="_blank" href="https://friend-forum.herokuapp.com/members">
+			<h2>Friend Forum: Reimagined Social Media Chat</h2>
+		</a>
+		<div class="container">
+			
 			<p>
-				All times are given in the user's inputed location's local time. This is accomplished by using Google's timezone API to find the hour difference from GMT given the user's inputted location and account for daylight savings time. Using moment.js, these hours are converted to milliseconds and added to the Unixtime of when the ISS will pass overhead. This is done for the top five passes by longest duration above 10 degrees over the horizon. Nested promises are used to manage the call stream.
+				In this application, the user is able to login, make a profile, and chat about eight predefined topics as well as in a global conversation. With our link tracking feature, the user will not have to go scrolling through an entire conversation to find a source one of his or her friends shared, as it is automatically stored in a separate list.  Finally, there is a news API to provide a feed of relevant top trending articles within the scope of the predefined topics.
 			</p>
 			<br>
+			<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
+			<h3>Node Packages: Sequelize, Passport, Express, MySql2, Socket.Io</h3>
+				<img class="draw" src="assets/images/friend_forum.gif" alt="wave">
+		</div>
+	</div>
+	<hr>
+	<div class="backgroundThree">
+		<a class="projectHeader" target="_blank" href="https://ancient-bastion-53743.herokuapp.com">
+			<h2>RxMinder: Helping Caregivers Help Their Loved Ones</h2>
+		</a>
+		<div class="container">
 			<p>
-				As an added touch, a weather API and a sunset API is used to determine if the sky will be clear and it will be night for the best possible viewing conditions. The weather API takes the user location and time of passover as arguments and delivers the weather. The Sunset api will provide a threshold response, day or night, for if the local time of the overhead pass is before astronomical sunrise and after astronomical sunset respecively.</p>
-				<br>
-				<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
-				<a target="_blank" href="https://andrew-apicello.github.io/ISS_Tracker/">
-					<img  class="draw" src="assets/images/iss.gif">
-				</a>
-			</div>
+				The goal of this project was to enable caregivers to set medication reminders for their loved ones via text message. Upon the loved one responding to the text message, the caregiver could see through this webpage if the medication had been properly delivered. If the text reminder was not responded to, then the caregiver would be sent an alert via text and the webpage would update accordingly.
+			</p>
+			<br>
+			<h3>Languages: HTML, CSS, Javascript, JQuery, React</h3>
+			<h3>Node Packages: Passport, Express, Mongoose, MongoDB, Twillio</h3>
+				<img class="draw" src="assets/images/pills.gif" alt="pills">
+
 		</div>
-		<div class="backgroundThree">
-			<a class="projectHeader" target="_blank" href="https://friend-forum.herokuapp.com/members">
-				<h2>Friend Forum: Structuring Social Media Chat</h2>
-			</a>
-			<div class="container">
-				<p>
-					The inspiration for this project came from a Facebook chat with a group of my college friends. We got onto a riveting topic, but then a casual suggestion for us all to get together derailed the conversation. The limited chat capabilities of social media is frustrating, as groups can only have one conversation at a time. So, my team’s idea was to enable online groups to make their their own threads, so they could structure their conversations the way they want and never miss out on sharing great thoughts.
-				</p>
-				<br>
-				<p>
-					As a first step towards creating a space where groups can create customized threads, my team and I developed the Friend Forum. In this application, the user is able to login, make a profile, and chat about eight predefined topics as well as in a global conversation. With our link tracking feature, the user will not have to go scrolling through an entire conversation to find a source one of his or her friends shared, as it is automatically stored in a separate list.  Finally, there is a news API to provide a feed of relevant top trending articles within the scope of the predefined topics.
-				</p>
-				<br>
-				<p>
-					Although quite similar to other social media outlets, we believe the Friend Forum represents a paradigm shift from mainstream sites. The user’s attention is not guided towards content other users have created about themselves, but rather towards conversations between users. It changes the emphasis of the what is important from the nodes of a web, to the strands connecting them.
-				</p>
-				<br>
-				<p>
-					The next steps for this project are to have customizable groups and forums rather than predefined ones. The challenge will be to make dynamically added sockets and paths so users can visit each other’s profiles and create their own custom chatrooms. Additionally, we hope to replicate the functionality of the link list with a hashtag list, where any hastaged words will automatically be stored in a list alongside the main chat.
-				</p>
-				<br>
-				<h3>Languages: HTML, CSS, Javascript, JQuery</h3>
-				<h3>Node Packages: Sequelize, Passport, Express, MySql2</h3>
-				<a target="_blank" href="https://friend-forum.herokuapp.com/members">
-					<img class="draw" src="assets/images/friend_forum.gif">
-				</a>
-			</div>
-		</div>
+	</div>
 		<!-- <div class="backgroundTwo">
 			<a target="_blank" href="">
 				<h2>Protein Folding with PyRosetta</h2>
@@ -156,32 +127,7 @@ Add 3rd project
 				<img class="draw" src="assets/images/stockmarket.gif">
 			</div>
 		</div> -->
-
-		
-
-		<script type="text/javascript">
-
-			var modal = document.getElementById('myModal');
-			var btn = document.getElementById("myBtn");
-			var span = document.getElementsByClassName("close")[0];
-
-
-			btn.onclick = function() {
-				modal.style.display = "block";
-			}
-			span.onclick = function() {
-				modal.style.display = "none";
-			}
-
-			window.onclick = function(event) {
-				if (event.target == modal) {
-					modal.style.display = "none";
-				}
-			}
-		</script>
-
 	</body>
-
 	</html>
 
 
