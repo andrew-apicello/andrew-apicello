@@ -182,7 +182,10 @@ p {
 	width: 400px;
 	height: 300px; 
 	transition: 1s;
-
+	
+}
+#image3{
+	border: black solid 1px;
 }
 
 
